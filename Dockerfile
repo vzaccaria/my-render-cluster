@@ -24,5 +24,5 @@ RUN mkdir /usr/local/blender && \
 	rm blender.tar.bz2
 
 ADD scripts /root/
-CMD blender -b -P /root/renderServerStartup.py
+CMD /usr/local/blender/blender -b -P /root/renderServerStartup.py
 EXPOSE 8000
